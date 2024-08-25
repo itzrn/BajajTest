@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app) 
 
 # Global Variables
 user_id = "john_doe_17091999"
